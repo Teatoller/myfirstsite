@@ -10,6 +10,5 @@
 </head>
 <body>
   <h1>Contact Form</h1>
-    <!-- <a href contacts: please contact us -->
 </body>
 </html>
