@@ -12,7 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $task = [
+        'Go to the store',
+        'Go to the market',
+        'Go to work'
+    ];
+    return view('welcome', [
+        'task' => $task
+    ]);
 });
 
 Route::get('/about', function () {
@@ -22,3 +29,6 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Use Illuminate\Support\Facades\Redis;
+
