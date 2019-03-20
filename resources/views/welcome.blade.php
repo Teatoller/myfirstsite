@@ -4,11 +4,11 @@
 
 @section('content')
 
-<h1>My First Website!</h1>
+<h1>My First {{$foo}} Website!</h1>
 <ul>
-<?php foreach ($task as $task): ?>
-<li><?= $task; ?></li>
-<?php endforeach ?>
+@foreach($task as $task)
+<li>{{ $task }}</li>
+@endforeach
 </ul>
 
 @endsection

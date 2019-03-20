@@ -15,11 +15,16 @@ Route::get('/', function () {
     $task = [
         'Go to the store',
         'Go to the market',
-        'Go to work'
+        'Go to work',
+        'Go home'
     ];
-    return view('welcome', [
-        'task' => $task
-    ]);
+    
+    return view('welcome')->withTask($task)->withFoo('foo');
+
+    // return view('welcome', [
+    //     'task' => $task,
+    //     'foo' => 'foobar'
+    // ]);
 });
 
 Route::get('/about', function () {
