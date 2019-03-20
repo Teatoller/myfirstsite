@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/', 'PagesController@home');
+
 Route::get('/', function () {
     $task = [
         'Go to the store',
